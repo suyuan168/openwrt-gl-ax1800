@@ -118,6 +118,17 @@ define Device/xiaomi_rm1800
 endef
 TARGET_DEVICES += xiaomi_rm1800
 
+define Device/ylx_x8
+	$(call Device/FitImage)
+	$(call Device/UbiFit)
+	BLOCKSIZE := 128k
+	PAGESIZE := 2048
+	DEVICE_DTS := qcom-ipq6018-x8
+	DEVICE_DTS_CONFIG := config@cp01-c3
+	DEVICE_TITLE :=ylx x8
+endef
+TARGET_DEVICES += ylx_x8
+
 define Device/zn_m2
 	$(call Device/FitImage)
 	$(call Device/UbiFit)

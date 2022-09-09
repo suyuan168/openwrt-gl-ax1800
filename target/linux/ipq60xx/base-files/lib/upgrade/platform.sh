@@ -17,7 +17,8 @@ platform_do_upgrade() {
 	huasifei,wf-hr6001|\
 	xiaomi,rm1800|\
 	qihoo,v6|\
-	zn,m2)
+	zn,m2|\
+	ylx,q60|ylx,x5|ylx,x511|ylx,x8)
 		nand_do_upgrade "$1"
 		;;
 	linksys,mr7350)

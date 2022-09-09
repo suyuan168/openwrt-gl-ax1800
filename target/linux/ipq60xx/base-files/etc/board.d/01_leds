@@ -29,6 +29,10 @@ huasifei,wf-hr6001)
 xiaomi,rm1800)
 	ucidef_set_led_netdev "internet" "Internet" "${boardname}:blue:network" "eth3"
 	;;
+ylx,q60|ylx,x5|ylx,x511|ylx,x8)
+	ucidef_set_led_netdev "wlan2g" "WLAN2G" "wlan2g" "wlan1"
+	ucidef_set_led_netdev "wlan5g" "WLAN5G" "wlan5g" "wlan0"
+	;;
 *)
 	;;
 esac
